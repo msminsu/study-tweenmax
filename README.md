@@ -201,16 +201,36 @@ $('#btnRestart').on('click',  function(){
 # step09 timelineLite, 
 
 ```
+ tl = new TimelineMax({paused: true}) // new TimelineLite();  {paused: true} : 정지
+    tlLoader = new TimelineMax({repeat: 2, onComplete: loadContent} );// repeat -1 : infinitly loop,  
+
+
+    tlLoader
+.staggerFromTo(dot, 0.3,
+    {y:0, autoAlpha: 0},
+    {y: 20, autoAlpha: 1, ease:Back.easeInOut}, 
+    0.05
+    )
+    .fromTo(loader, 0.3,
+        {autoAlpha:1, scale:1.3},
+        {autoAlpha:0, scale:1, ease: Power0.easeNone},
+        0.9
+        );
+
+        function loadContent(){
+            console.log('contents')
+        }
 
 ```
 
-# step04 callback function
+# step10 callback function
+
+```
+loader:
 
 ```
 
-```
-
-# step04 callback function
+# step11 callback function
 
 ```
 
