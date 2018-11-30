@@ -9,16 +9,16 @@
  
 // })(jQuery);
 
+var arr=["바나나","사과","복숭아"];
+
 for(var i = 0; i < 3; i++){
     console.log(i);
     setTimeout(function(){
         console.log('숫자 출력 하기 '+i);
     }, 1000);
+    //console.log(arr[i]);
 };
 
 for( let k = 0; k < 3; k++){
-    console.log(k);
-    setTimeout(function(){
-        console.log('숫자 출력 하기 '+k);
-    }, 1000);
+    // console.log(arr[k]);
 }
