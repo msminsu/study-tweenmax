@@ -166,3 +166,4 @@ TweenMax.fromTo(img, 1, {x:20}, {x:400,y:200});
 
 //tweenMax.set = setting
 TweenMax.set(img, {x: 200}); */
+>>>>>>> 2cfc7f1cb1bc937b210317dc17879b7336cd9a65
