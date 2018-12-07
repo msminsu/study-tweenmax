@@ -43,7 +43,7 @@ var pageMain = (function () {
 
    topBtn = function () {
        var $topBtn = $('.btn-link-gotop');
-       var startPoint = $('#header').height();
+       var startPoint = $('div').attr('data-top').height();
        var currentPos = $(window).scrollTop();
 
        $topBtn.hide();
